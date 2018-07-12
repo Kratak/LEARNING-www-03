@@ -7,6 +7,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 
 }
 
@@ -15,15 +16,31 @@ body {
 	width: 750px;
 	height: 1334px;
 	color: var(--main-p-text);
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 35px;
 }
 
 #backbt {
+
 	position: absolute;
-	top: 20px;
 	left: 5px;
 	color: var(--main-text);
-	border: none;
+	top: 20px;
+	display: flex;
 }
+
+
+#backbt::before {
+	font-size: 2rem;
+	content: "\3008 ";
+	margin-right: 3px;
+	position: relative;
+	top: -10px
+}
+
 
 main {
 	display: flex;
