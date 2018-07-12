@@ -1,11 +1,39 @@
 :root {
 	--main-back: #000;
 	--main-text: #fff;
-	--main-p-text: #413289;
+	--main-p-text: #423289;
 }
 
 * {
 	padding: 0;
 	margin: 0;
 
+}
+
+body {
+	margin: auto;
+	width: 750px;
+	height: 1334px;
+	color: var(--main-p-text);
+}
+
+#backbt {
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	color: var(--main-text);
+	border: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+
+}
+
+header figure img {
+	margin-left: -50px;
+	vertical-align: middle;
+	max-width: 750px;
+	max-height: 530px;
 }
