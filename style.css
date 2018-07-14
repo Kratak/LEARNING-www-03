@@ -19,28 +19,6 @@ body {
 	font-size: 16px;
 }
 
-h1 {
-	font-size: 35px;
-}
-
-#backbt {
-
-	position: absolute;
-	left: 5px;
-	color: var(--main-text);
-	top: 20px;
-	display: flex;
-}
-
-
-#backbt::before {
-	font-size: 2rem;
-	content: "\3008 ";
-	margin-right: 3px;
-	position: relative;
-	top: -10px
-}
-
 
 main {
 	display: flex;
@@ -53,4 +31,36 @@ header figure img {
 	vertical-align: middle;
 	max-width: 750px;
 	max-height: 530px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+.backbt {
+	position: absolute;
+	left: 5px;
+	color: var(--main-text);
+	top: 20px;
+	display: flex;
+}
+
+
+.left_agile::before {
+	transform: scale(.99, 0.65);
+	font-size: 2rem;
+	content: "\3008 ";
+	margin-right: 3px;
+	position: relative;
+	top: -10px
+}
+
+
+.right_agile::after {
+	display: inline-block;
+	transform: scale(.99, 0.7);
+	font-size: 2rem;
+	content: "\3009 ";
+	position: relative;
+	top: 5px;
 }
